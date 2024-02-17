@@ -1,0 +1,459 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loco.css">
+</head>
+
+<body>
+    
+    <div class="main">
+
+    <nav class="bg-transparent">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="relative flex h-16 items-center justify-between">
+                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                    <!-- Mobile menu button-->
+
+                </div>
+                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                    <div class="flex flex-shrink-0 items-center">
+                        <h1 class="text-[#4F46E5] font-semibold text-2xl">MarketingX</h1>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:block">
+                        <div class="flex space-x-4">
+                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                            <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                                aria-current="page">Dashboard</a>
+                            <a href="#"
+                                class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
+                            <a href="#"
+                                class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <button class="navBtn ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 24">
+                        <path d="m18 0 8 12 10-8-4 20H4L0 4l10 8 8-12z"></path>
+                    </svg>
+                    Unlock Pro
+                </button>
+
+
+
+                <!--
+                  Dropdown menu, show/hide based on menu state.
+      
+                  Entering: "transition ease-out duration-100"
+                    From: "transform opacity-0 scale-95"
+                    To: "transform opacity-100 scale-100"
+                  Leaving: "transition ease-in duration-75"
+                    From: "transform opacity-100 scale-100"
+                    To: "transform opacity-0 scale-95"
+                -->
+
+            </div>
+        </div>
+        
+        
+
+
+    </nav>
+
+    <section class="relative py-32 lg:py-36 bg-white">
+        <div
+            class="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
+            <div class="absolute w-full lg:w-1/2 inset-y-0 lg:right-0 hidden lg:block">
+                <span
+                    class="absolute -left-6 md:left-4 top-24 lg:top-28 w-24 h-24 rotate-90 skew-x-12 rounded-3xl bg-green-400 blur-xl opacity-60 lg:opacity-95 lg:block hidden"></span>
+                <span class="absolute right-4 bottom-12 w-24 h-24 rounded-3xl bg-blue-600 blur-xl opacity-80"></span>
+            </div>
+            <span
+                class="w-4/12 lg:w-2/12 aspect-square bg-gradient-to-tr from-blue-600 to-green-400 absolute -top-5 lg:left-0 rounded-full skew-y-12 blur-2xl opacity-40 skew-x-12 rotate-90"></span>
+            <div class="relative flex flex-col items-center text-center lg:text-left lg:py-7 xl:py-8 
+                lg:items-start lg:max-w-none max-w-3xl mx-auto lg:mx-0 lg:flex-1 lg:w-1/2">
+
+                <h1 class="text-3xl leading-tight sm:text-4xl md:text-5xl xl:text-6xl
+                font-bold text-gray-900">
+                    Social Media <span
+                        class="text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">Marketing</span>
+                    is the Best Ever.
+                </h1>
+                <p class="mt-8 text-gray-700 mb-8">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores repellat perspiciatis aspernatur
+                    quis voluptatum porro incidunt,
+                    libero sequi quos eos velit
+                </p>
+                <a style="--clr: #7808D0" class="heroBtn" href="#">
+                    <span class="heroBtn__icon-wrapper">
+                        <svg width="10" class="heroBtn__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 15">
+                            <path fill="currentColor"
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                            </path>
+                        </svg>
+
+                        <svg class="heroBtn__icon-svg  heroBtn__icon-svg--copy" xmlns="http://www.w3.org/2000/svg"
+                            width="10" fill="none" viewBox="0 0 14 15">
+                            <path fill="currentColor"
+                                d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                            </path>
+                        </svg>
+                    </span>
+                    Explore All
+                </a>
+            </div>
+            <div class="flex flex-1 lg:w-1/2 lg:h-auto relative lg:max-w-none lg:mx-0 mx-auto max-w-3xl">
+                <img src="https://agencex-astro.vercel.app/images/image1.webp" alt="Hero image" width="2350"
+                    height="2359"
+                    class="lg:absolute lg:w-full lg:h-full rounded-3xl object-cover lg:max-h-none max-h-96">
+            </div>
+        </div>
+    </section>
+
+    <!-- component -->
+    <div class="relative flex items-top justify-center min-h-[65vh] bg-white dark:bg-gray-900 sm:items-center sm:pt-0">
+        <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
+            <div class="mt-8 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2">
+                    <div class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg">
+                        <h1
+                            class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-indigo-600 from-20% via-blue-600 via-30% to-green-600">
+                            Get in touch
+                        </h1>
+                        <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2">
+                            Fill in the form to start a conversation
+                        </p>
+
+                        <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                Acme Inc, Street, State,
+                                Postal Code
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mt-4 text-gray-600 dark:text-gray-400">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                +44 1234567890
+                            </div>
+                        </div>
+
+                        <div class="flex items-center mt-2 text-gray-600 dark:text-gray-400">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div class="ml-4 text-md tracking-wide font-semibold w-40">
+                                info@acme.org
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="p-6 flex flex-col justify-center">
+                        <div class="flex flex-col">
+                            <label for="name" class="hidden">Full Name</label>
+                            <input type="name" name="name" id="name" placeholder="Full Name"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                        </div>
+
+                        <div class="flex flex-col mt-2">
+                            <label for="email" class="hidden">Email</label>
+                            <input type="email" name="email" id="email" placeholder="Email"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                        </div>
+
+                        <div class="flex flex-col mt-2 mb-8">
+                            <label for="tel" class="hidden">Number</label>
+                            <input type="tel" name="tel" id="tel" placeholder="Telephone Number"
+                                class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none">
+                        </div>
+
+                        <button class="cssbuttons-io">
+                            <span>
+                                Submit</span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- component -->
+    <div class="bg-white">
+        <div class="container px-6 py-8 mx-auto">
+            <div
+                class="flex flex-col items-center justify-center space-y-8 lg:-mx-4 lg:flex-row lg:items-stretch lg:space-y-0">
+                <div
+                    class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-white border-2 border-gray-200 rounded-lg lg:mx-4 dark:bg-gray-800 dark:border-gray-700 transition-all  hover:-translate-y-6">
+                    <div class="flex-shrink-0">
+                        <h2
+                            class="inline-flex items-center justify-center px-2 font-semibold tracking-tight text-blue-400 uppercase rounded-lg bg-gray-50 dark:bg-gray-700">
+                            Casual
+                        </h2>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="pt-2 text-4xl font-bold text-gray-800 uppercase dark:text-gray-100">
+                            Free
+                        </span>
+                    </div>
+                    <ul class="flex-1 space-y-4">
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Up to 5 projects
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Up to 10 collaborators
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            2Gb of storage
+                        </li>
+                    </ul>
+
+                    <button
+                        class="inline-flex items-center justify-center px-4 py-2 font-semibold text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                        Start free
+                    </button>
+                </div>
+
+                <div
+                    class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-white border-2 border-gray-200 rounded-lg lg:mx-4 dark:bg-gray-800 dark:border-gray-700 transition-all  hover:-translate-y-6">
+                    <div class="flex-shrink-0">
+                        <h2
+                            class="inline-flex items-center justify-center px-2 font-semibold tracking-tight text-blue-400 uppercase rounded-lg bg-gray-50 dark:bg-gray-700">
+                            Profesional
+                        </h2>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="pt-2 text-4xl font-bold text-gray-800 uppercase dark:text-gray-100">
+                            $24.90
+                        </span>
+                        <span class="text-gray-500 dark:text-gray-400">
+                            /month
+                        </span>
+                    </div>
+                    <ul class="flex-1 space-y-4">
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Up to 10 projects
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Up to 20 collaborators
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            10Gb of storage
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Real-time collaborations
+                        </li>
+                    </ul>
+
+                    <button
+                        class="inline-flex items-center justify-center px-4 py-2 font-semibold text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                        Start free trial
+                    </button>
+                </div>
+
+                <div
+                    class="flex flex-col w-full max-w-sm p-8 space-y-8 text-center bg-white border-2 border-gray-200 rounded-lg lg:mx-4 dark:bg-gray-800 dark:border-gray-700 transition-all  hover:-translate-y-6">
+                    <div class="flex-shrink-0">
+                        <h2
+                            class="inline-flex items-center justify-center px-2 font-semibold tracking-tight text-blue-400 uppercase rounded-lg bg-gray-50 dark:bg-gray-700">
+                            Expert
+                        </h2>
+                    </div>
+                    <div class="flex-shrink-0">
+                        <span class="pt-2 text-4xl font-bold text-gray-800 uppercase dark:text-gray-100">
+                            $49.90
+                        </span>
+                        <span class="text-gray-500 dark:text-gray-400">
+                            /month
+                        </span>
+                    </div>
+                    <ul class="flex-1 space-y-4">
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Unlimited projects
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Unlimited collaborators
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Unlimited storage
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            Real-time collaborations
+                        </li>
+                        <li class="text-gray-500 dark:text-gray-400">
+                            24x7 Support
+                        </li>
+                    </ul>
+
+                    <button
+                        class="inline-flex items-center justify-center px-4 py-2 font-semibold text-white uppercase transition-colors bg-blue-500 rounded-lg hover:bg-blue-700 focus:outline-none">
+                        Start free trial
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- component -->
+    <!-- This is an example component -->
+    <div class=" bg-gray-900">
+        <div class="max-w-2xl mx-auto text-white py-10">
+            <div class="text-center">
+                <h3 class="text-3xl mb-3"> Download our Marketing App </h3>
+                <p> Stay fit. All day, every day. </p>
+                <div class="flex justify-center my-10">
+                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888857.png" class="w-7 md:w-8">
+                        <div class="text-left ml-3">
+                            <p class='text-xs text-gray-200'>Download on </p>
+                            <p class="text-sm md:text-base"> Google Play Store </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+                        <img src="https://cdn-icons-png.flaticon.com/512/888/888841.png" class="w-7 md:w-8">
+                        <div class="text-left ml-3">
+                            <p class='text-xs text-gray-200'>Download on </p>
+                            <p class="text-sm md:text-base"> Apple Store </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-28 flex flex-col md:flex-row md:justify-between items-center text-sm text-gray-400">
+                <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; all Rights reserverd, 2021. </p>
+                <div class="order-1 md:order-2">
+                    <section class="flex justify-between relative gap-2 items-center">
+                        <button
+                          href="/"
+                          class="group flex justify-center p-2 rounded-md drop-shadow-xl from-gray-800 bg-[#316FF6] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#331029] hover:to-[#310413]"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="1em"
+                            height="1.1em"
+                            viewBox="0 0 448 512"
+                            stroke-width="0"
+                            fill="currentColor"
+                            stroke="currentColor"
+                            class="w-5"
+                          >
+                            <path
+                              d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+                            ></path>
+                          </svg>
+                          <span
+                            class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+                          >
+                            Facebook
+                          </span>
+                        </button>
+                        <button
+  href="/"
+  class="group flex justify-center p-2 rounded-md drop-shadow-xl from-blue-500 bg-[#0077B5] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#005180] hover:to-[#00355C]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1.1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="w-5"
+  >
+    <path
+      d="M21 0H3C1.34315 0 0 1.34315 0 3V21C0 22.6569 1.34315 24 3 24H21C22.6569 24 24 22.6569 24 21V3C24 1.34315 22.6569 0 21 0ZM7.99978 20H5.99978V9.99957H7.99978V20ZM6.99978 8.49957C6.99978 8.22365 7.22386 7.99957 7.49978 7.99957C7.7757 7.99957 7.99978 8.22365 7.99978 8.49957C7.99978 8.77549 7.7757 8.99957 7.49978 8.99957C7.22386 8.99957 6.99978 8.77549 6.99978 8.49957ZM20.0002 20H18.0002V14.9999C18.0002 13.4699 17.094 12.9999 16.0002 12.9999C14.5822 12.9999 13.8722 13.9999 13.8722 14.9999V20H11.8722V9.99957H13.8722V11.1996C14.8722 9.99957 16.6482 9.99957 17.0002 9.99957C17.9242 9.99957 18.0002 9.20957 18.0002 8.79957V8.49957C18.0002 7.45957 17.7662 6.79957 16.0002 6.79957C14.2762 6.79957 13.1282 7.95957 13.1282 9.59957V20H11.1282V9.99957H12.8722V11.2996C12.8722 11.2996 14.0002 9.99957 16.0002 9.99957C17.094 9.99957 18.0002 10.8996 18.0002 11.9996V20Z"
+    ></path>
+  </svg>
+  <span
+    class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+  >
+    LinkedIn
+  </span>
+</button>
+
+                        <button
+  href="/"
+  class="group flex justify-center p-2 rounded-md drop-shadow-xl from-blue-400 bg-[#1DA1F2] text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:from-[#104867] hover:to-[#0D3B52]"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1em"
+    height="1.1em"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    class="w-5"
+  >
+    <path
+      d="M22 2.08C21.09 2.26 20.17 2.35 19.26 2.35C15.36 2.35 12 5.7 12 9.59V14H8.59C4.69 14 2 16.69 2 20.59C2 21.97 2.78 23.22 4.03 23.79C4.44 23.94 4.89 24 5.34 24C6.29 24 7.23 23.74 8.03 23.26C9.36 22.35 11.16 22 13 22C16.9 22 20 19.79 20 16.5V9.59C20 8.94 19.91 8.31 19.74 7.72C19.92 7.8 20.11 7.89 20.3 7.99C21.67 9.11 22.36 10.89 22 12.82C22.82 12.09 23.42 11.09 23.74 10C24.06 8.91 24.05 7.74 23.71 6.65C24.42 7 25 7.7 25 8.55C25 9.42 24.65 10.24 24.1 10.89C24.86 10.62 25.56 10.2 26 9.7C25.29 10.04 24.55 10.29 23.79 10.4Z"
+    ></path>
+  </svg>
+  <span
+    class="absolute opacity-0 group-hover:opacity-100 group-hover:text-gray-700 group-hover:text-sm group-hover:-translate-y-10 duration-700"
+  >
+    Twitter
+  </span>
+</button>
+
+                      </section>
+                      
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+    <script src="script.js"></script>
+    
+    <script src="locomotive-scroll.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</body>
+
+</html>
